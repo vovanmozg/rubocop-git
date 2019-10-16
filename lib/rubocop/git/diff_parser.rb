@@ -21,7 +21,7 @@ module RuboCop
             in_patch = true
           end
 
-          files.last.patch << line if in_patch
+          files.last.patch << line if files.last && in_patch
         end
 
         files
